@@ -54,10 +54,14 @@ const CategoryDetail = () => {
                                             </div>
                                         </div>
                                         <div className="fontIcons">
-                                            <i className="fa-brands fa-square-facebook"></i>
-                                            <i className="fa-brands fa-square-twitter"></i>
-                                            <i className="fa-brands fa-instagram"></i>
-                                            <i className="fa-brands fa-youtube"></i>
+                                            {/* <i className="fa-brands fa-square-facebook"></i> */}
+                                            <i className="fa-brands fa-square-facebook fa-shake"></i>
+                                            {/* <i className="fa-brands fa-square-twitter"></i> */}
+                                            <i className="fa-brands fa-square-twitter fa-spin"></i>
+                                            {/* <i className="fa-brands fa-instagram"></i> */}
+                                            <i className="fa-brands fa-instagram fa-flip"></i>
+                                            {/* <i className="fa-brands fa-youtube"></i> */}
+                                            <i className="fa-brands fa-youtube fa-beat"></i>
                                         </div>
                                     </div>
 

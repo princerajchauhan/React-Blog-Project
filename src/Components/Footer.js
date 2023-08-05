@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <div className="footerMain">
-                <button onClick={()=>window.scrollTo(0,0)}>
+                <button onClick={() => window.scrollTo(0, 0)}>
                     <i class="fa-solid fa-arrow-up"></i> Back To Top
                 </button>
                 <div className="logoSide">
@@ -16,10 +16,10 @@ const Footer = () => {
                     </div>
                     <p>The Siren is an informational website published on the World Wide Web for providing details of different category.</p>
                     <div className="socialIcons">
-                        <i className="fa-brands fa-square-facebook"></i>
-                        <i className="fa-brands fa-square-twitter"></i>
-                        <i className="fa-brands fa-instagram"></i>
-                        <i className="fa-brands fa-youtube"></i>
+                        <i className="fa-brands fa-square-facebook fa-shake"></i>
+                        <i className="fa-brands fa-square-twitter fa-spin"></i>
+                        <i className="fa-brands fa-instagram fa-flip"></i>
+                        <i className="fa-brands fa-youtube fa-beat"></i>
                     </div>
                 </div>
 
