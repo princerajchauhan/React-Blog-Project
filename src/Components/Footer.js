@@ -7,7 +7,7 @@ const Footer = () => {
         <>
             <div className="footerMain">
                 <button onClick={() => window.scrollTo(0, 0)}>
-                    <i class="fa-solid fa-arrow-up"></i> Back To Top
+                    <i className="fa-solid fa-arrow-up"></i> Back To Top
                 </button>
                 <div className="logoSide">
                     <div className="logo logo-Foot">
