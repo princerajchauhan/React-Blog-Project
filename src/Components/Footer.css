@@ -1,0 +1,201 @@
+.footerMain {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    gap: 60px;
+    background-color: lightgray;
+    padding: 20px;
+    position: relative;
+}
+
+.footerMain > button{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: all 0.3s linear;
+}
+
+.footerMain > button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.servRes{
+    display: flex;
+    gap: 60px;
+}
+
+.logoSide {
+    width: 40%;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.logo-Foot h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    color: teal;
+}
+
+.logo-Foot span {
+    font-size: 22px;
+}
+
+.logoSide p {
+    width: 50%;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.socialIcons i {
+    cursor: pointer;
+}
+
+.nav-menu-footer {
+    margin-top: 15px;
+}
+
+.nav-item-footer {
+    list-style: none;
+    padding: 3px;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.linkClass1 {
+    position: relative;
+    padding: 3px 0;
+}
+
+.linkClass1::before {
+    position: absolute;
+    content: '';
+    top: 95%;
+    left: 0%;
+    width: 0%;
+    transition: all 0.4s linear;
+    border-bottom: 2px solid teal;
+}
+
+.linkClass1:hover::before {
+    width: 100%;
+}
+
+.resources ul {
+    margin-top: 15px;
+}
+
+.resources ul li {
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.ready {
+    width: 20%;
+    margin-top: 40px;
+    margin-left: 40px;
+    animation: ready 2s linear infinite;
+}
+
+@keyframes ready {
+    0% {
+        color: blue;
+    }
+
+    25% {
+        color: teal;
+    }
+
+    40% {
+        color: purple;
+    }
+
+    55% {
+        color: brown;
+    }
+
+    70% {
+        color: red;
+    }
+
+    90% {
+        color: orchid;
+    }
+}
+
+
+/* ************************* RESPONSIVE *********************** */
+
+@media screen and (max-width: 1000px) {
+    .logoSide {
+        width: 30%;
+    }
+
+    .logoSide p {
+        width: 90%;
+    }
+
+    .ready {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footerMain, .servRes {
+        gap: 20px;
+    }
+
+    .logoSide {
+        width: 40%;
+    }
+
+    .nav-menu-footer, .resources ul {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .ready{
+        margin-top: 20px;
+    }
+    .logoSide{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footerMain{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoSide{
+        width: 100%;
+    }
+    .servRes{
+        justify-content: center;
+        width: 100%;
+        gap: 50px;
+    }
+    .ready{
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+}

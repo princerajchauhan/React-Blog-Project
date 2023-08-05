@@ -1,0 +1,289 @@
+.headDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailBtn {
+    color: green;
+    border: 2px solid green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.detailBtn:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.topDiv {
+    display: flex;
+    width: 70%;
+}
+
+.likeShare {
+    width: 35%;
+    position: relative;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.likeShare .icons {
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+    margin-left: 50px;
+    margin-top: 300px;
+    align-items: center;
+    position: fixed;
+    z-index: -1;
+}
+
+.icons:first-child {
+    margin-top: 260px;
+    margin-bottom: 20px;
+}
+
+.detailSide {
+    width: 65%;
+    margin-left: 70px;
+}
+
+.detailSide h1 {
+    margin-left: 10px;
+}
+
+.detailcontent>img {
+    width: 100%;
+    height: 22vw;
+    filter: drop-shadow(0 0 3px gray);
+}
+
+.detailcontent>p {
+    margin: 25px 0;
+    font-size: 27px;
+    text-align: justify;
+
+}
+
+.staticContent {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin {
+    margin-left: -85px;
+    display: flex;
+    align-items: center;
+}
+
+.admin>img {
+    width: 7vw;
+    height: 6vw;
+}
+
+.admin div p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+
+.fontIcons {
+    margin-right: 85px;
+}
+
+.fontIcons>i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.bottomLike {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.bottomLike .icons {
+    margin-left: -65px;
+    margin-top: 10px;
+    font-size: 22px;
+
+}
+
+
+/* ***** Back button *********** */
+
+.goBackBtn {
+    z-index: 5;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+
+.goBackBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* ******************************* RESPONSIVE ************************ */
+
+@media screen and (max-width:1000px) {
+    .topDiv {
+        width: 80%;
+    }
+
+    .admin div p {
+        margin-bottom: 8px;
+    }
+
+    .admin>img {
+        width: 8vw;
+        height: 7vw;
+    }
+
+    .detailcontent p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .topDiv {
+        width: 85%;
+    }
+
+    .detailcontent p {
+        font-size: 24px;
+    }
+
+    .admin div p {
+        margin-bottom: 5px;
+    }
+
+    .admin>img {
+        width: 9vw;
+        height: 8vw;
+    }
+
+    .fontIcons {
+        margin-right: 45px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .topDiv {
+        width: 90%;
+    }
+
+    .likeShare {
+        width: 27%;
+    }
+
+    .detailSide {
+        width: 70%;
+    }
+
+    .detailcontent p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .likeShare {
+        display: none;
+    }
+
+    .detailSide {
+        width: 75%;
+    }
+
+    .detailcontent img {
+        height: 30vw;
+    }
+
+    .admin img {
+        width: 12vw;
+        height: 11vw;
+    }
+
+    .detailcontent p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .logo>h1 {
+        margin-left: -13px;
+        margin-top: 6px;
+    }
+
+    .headDetail {
+        border-bottom: 2px solid teal;
+    }
+
+    .likeShare {
+        display: none;
+    }
+
+    .topDiv {
+        width: 100%;
+    }
+
+    .detailSide {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .detailSide h1 {
+        width: 100%;
+    }
+
+    .detailcontent img {
+        height: 45vw;
+    }
+
+    .admin {
+        margin-left: -15px;
+    }
+
+    .admin div {
+        text-align: left;
+    }
+
+    .admin img {
+        width: 14vw;
+        height: 13vw;
+    }
+
+    .detailcontent p {
+        font-size: 18px;
+    }
+
+    .bottomLike .icons {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .staticContent {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
