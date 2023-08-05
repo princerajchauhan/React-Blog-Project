@@ -569,34 +569,34 @@ const Data = createContext(
         },
         {
             "id": 77,
-            "title": "Ghazi Attack",
-            "img_url": "https://static.sacnilk.com/articles/entertainment/box_office/863.jpg",
-            "description": "In November, 1971, India and Pakistan are on the verge of declaring war on each other, as a result of the refugee crisis precipitated by the Pakistan Army under Operation Searchlight. The Indian Navy and RAW decipher a secret code sent from Pakistan to East Pakistan (modern-day Bangladesh), relating to a possible attack on an Indian naval vessel. The Navy deduces that the target may be INS Vikrant, India's sole aircraft carrier. The top command dispatches the submarine S21, under the command of Captain Ranvijay Singh for recce missions.",
-            "rating": "7.5/10",
+            "title": "Khakee: The Bihar Chapter",
+            "img_url": "https://www.koimoi.com/wp-content/new-galleries/2022/11/khakee-the-bihar-chapter-review-001.jpg",
+            "description": "This series is based in Sheikhpura district, Nalanda district and Patna district. Chandan Mahato, who was actually Pintu Mahato in real life,[5][6] is a member of Ashok Mahto gang, which has been active in Nalanda and Sheikhpura for many years. The story is about how Sheikhpura IPS Amit Lodha brings the Ashok Mahto gang to justice, while navigating his own personal issues",
+            "rating": "8.2/10",
             "category": "Bollywood"
         },
         {
             "id": 78,
-            "title": "Article 15",
-            "img_url": "https://i0.wp.com/velivada.com/wp-content/uploads/2020/09/article-15-review.jpg?fit=1000%2C563&ssl=1",
-            "description": "In the village of Laalgaon in Uttar Pradesh, two Dalit girls are seen trapped in a school bus by some men. Ayan Ranjan, a St. Stephen's College, Delhi graduate and an Indian Police Service officer, is assigned to Laalgaon as the Additional Superintendent of Police and is warmly welcomed by officers Brahmadatt Singh and Kisan Jatav. Ayan encounters various forms of caste discrimination as soon as he arrives in the village, and periodically shares what he observes to his wife, Aditi, over the phone. Local villagers come to Ayan's reception asking the officers to find the missing girls but are turned down. ",
-            "rating": "8.1/10",
+            "title": "Gangaajal",
+            "img_url": "https://m.media-amazon.com/images/M/MV5BMDc2YmJjZjQtMzk5ZC00YThiLThhYTktOGU4ZTNiYzg1YmM4XkEyXkFqcGdeQXVyMzQ5MzkwMDY@._V1_.jpg",
+            "description": "The Superintendent of Police (SP) Amit Kumar (Ajay Devgn) takes charge of Tejpur, which has a high crime rate. In the district, the police are controlled by the don and gangster Sadhu Yadav (Mohan Joshi) and his son Sunder Yadav (Yashpal Sharma). While travelling to the headquarters, Amit's car breaks down and he inspects the area. He observes professional laxity among police officials, crumbling infrastructure, outdated weaponry, lack of stationery and transport, and the dependence of officials on corrupt local contractors.",
+            "rating": "7.8/10",
             "category": "Bollywood"
         },
         {
             "id": 79,
-            "title": "Chup: Revenge of the Artist",
-            "img_url": "https://images.news18.com/ibnlive/uploads/2022/09/chup-revenge-of-the-artist-16638281594x3.jpg",
-            "description": "In Mumbai, a film critic named Nitin Srivatsav is found dead at his residence, where IG Arvind Mathur is assigned to investigate the case. Arvind deduces that the killer mutilated Nitin's body with a surgical knife and drew a symbol on his forehead, which he is unable to decipher.",
-            "rating": "7.6/10",
+            "title": "1971",
+            "img_url": "https://m.media-amazon.com/images/M/MV5BZDQyZWI4MjktZDNlYS00MDM1LWEzNzAtYTIyZDk4MTBkZjUwXkEyXkFqcGdeQXVyMzE0Njk1NjI@._V1_.jpg",
+            "description": "The story takes place in Pakistan in 1977, six years after the 1971 Bangladesh Liberation War. Indian POWs from the 1971 war are kept in a prison camp along with several prisoners from the 1965 war. The 1971 POWs remain healthy, but the 1965 POWs have gone insane with despair. Major Suraj Singh of 18th Rajputana Rifles, Captain Kabir, Captain Jacob and Subedar Ahmed discuss the camp's good facilities. They have been moved into the camp out of several Pakistani jails. ",
+            "rating": "8.2/10",
             "category": "Bollywood"
         },
         {
             "id": 80,
-            "title": "Gadar: Ek Prem Katha",
-            "img_url": "https://akamaividz2.zee5.com/image/upload/w_1170,h_658,c_scale,f_webp,q_auto:eco/resources/0-0-gadarekpremkatha/list/1170x658withlogodbe19bfe1fdf45c392ae9ffafb8981e2.jpg",
-            "description": "During the Partition of India, Sikhs and Hindus are attacked by Muslims in Pakistan when migrating to India by train from the railway station at West Punjab in Pakistan. In response, the Sikhs and Hindus reply by killing Muslims migrating to Pakistan from East Punjab in India. During the Hindu-Muslim riots that erupted soon after the partition, Tara Singh, a truck driver, also plans to kill Muslims, but stops after recognising his college friend Sakina from the little Taj Mahal antique in her hands. ",
-            "rating": "7.3/10",
+            "title": "GodFather",
+            "img_url": "https://cdn.gulte.com/wp-content/uploads/2022/10/Chiranjeevi-2.jpg",
+            "description": "At Interpol's office in France, an officer is handing over his case about Abraham Qureshi, who is a mysterious smuggler kingpin and godfather to his junior, stating that it was his only unsolvable case.Meanwhile, in Andhra Pradesh, CM Padmakant Reddy alias 'PKR', the leader of the ruling party Jan Jagruti Party (JJP), dies in the hospital while getting treated. Taking advantage of the situation and believing that it would benefit the upcoming election, acting CM Narayana Varma sends party workers to riot outside the hospital. ",
+            "rating": "9.2/10",
             "category": "Bollywood"
         },
         {
