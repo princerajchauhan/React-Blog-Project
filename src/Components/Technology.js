@@ -8,6 +8,8 @@ import Adv from '../Advertisement'
 
 const Technology = () => {
 
+    window.scrollTo(0,0)
+
     const context = useContext(Data)
     const advert = useContext(Adv)
 
