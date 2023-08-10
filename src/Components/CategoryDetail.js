@@ -9,11 +9,11 @@ const CategoryDetail = () => {
 
     const context = useContext(Data)
     const navigate = useNavigate()
-
-    const [moreImage] = useState(context.sort(() => Math.random() - Math.random()).slice(0, 3))
-
+    
     const id = parseInt(useParams().id)
-
+    const categ = context.find(item => item.id === id).category
+    
+    const [moreImage] = useState(context.sort(() => Math.random() - Math.random()).filter(item => item.category === categ).slice(0, 3))
 
     return (
         <div style={{ width: '85%', margin: 'auto' }}>
@@ -54,13 +54,9 @@ const CategoryDetail = () => {
                                             </div>
                                         </div>
                                         <div className="fontIcons">
-                                            {/* <i className="fa-brands fa-square-facebook"></i> */}
                                             <i className="fa-brands fa-square-facebook fa-shake"></i>
-                                            {/* <i className="fa-brands fa-square-twitter"></i> */}
                                             <i className="fa-brands fa-square-twitter fa-spin"></i>
-                                            {/* <i className="fa-brands fa-instagram"></i> */}
                                             <i className="fa-brands fa-instagram fa-flip"></i>
-                                            {/* <i className="fa-brands fa-youtube"></i> */}
                                             <i className="fa-brands fa-youtube fa-beat"></i>
                                         </div>
                                     </div>
@@ -92,7 +88,7 @@ const CategoryDetail = () => {
                 </div>
             </div>
 
-            <div style={{ marginTop: '70px 0', backgroundColor: 'white' }}>
+            <div style={{ marginTop: '70px', backgroundColor: 'white' }}>
 
                 <h1 style={{ margin: '70px 0', fontWeight: '600' }}>More From The Siren</h1>
                 <div className="topComp">
