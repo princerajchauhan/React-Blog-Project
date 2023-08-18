@@ -31,7 +31,7 @@
     color: white;
     padding: 5px;
     display: none;
-    animation: titlemove 0.5s linear
+    animation: titlemove 0.4s linear
 }
 
 .topTitle{
@@ -60,11 +60,13 @@
 .secondTop:hover .firstTopPara{
     display: block; 
     height: 25%;
+    animation-duration: 0.3s
 }
 
 .thirdTop:hover .firstTopPara{
     display: block; 
     height: 25%;
+    animation-duration: 0.3s;
 }
 
 @keyframes titlemove {
