@@ -10,10 +10,70 @@
     margin: 30px auto;
 }
 
-.mainDiv>img {
+.mainDiv>.firstTop {
     width: 65%;
     height: 470px;
     border-radius: 5px;
+    position: relative;
+}
+.firstTop>img{
+    width: 100%;
+    height: 100%;
+}
+
+.firstTopPara{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(12, 12, 12, 0.5);
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    display: none;
+    animation: titlemove 0.5s linear
+}
+
+.topTitle{
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: orange;
+}
+
+.firstTop:hover .firstTopPara{
+    display: block; 
+}
+
+.secondTop, .thirdTop{
+    position: relative;
+}
+
+.leftImg .topTitle{
+    font-size: 1vw;
+}
+
+.leftImg .topTitle +p{
+    font-size: 14px;
+}
+
+
+.secondTop:hover .firstTopPara{
+    display: block; 
+    height: 25%;
+}
+
+.thirdTop:hover .firstTopPara{
+    display: block; 
+    height: 25%;
+}
+
+@keyframes titlemove {
+    0%{
+        height: 5%;
+    }
+    70%{
+        height: 20%;
+    }
 }
 
 .mainDiv img {
@@ -28,9 +88,14 @@
     flex-direction: column;
 }
 
-.leftImg img {
+.leftImg > div{
     width: 100%;
     height: 49%;
+}
+
+.leftImg img {
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 
@@ -314,6 +379,19 @@
 
 /* ************************ RESPONSIVE ********************* */
 @media screen and (max-width:1100px) {
+
+    .firstTop:hover .firstTopPara{
+        display: none; 
+    }
+    
+    .secondTop:hover .firstTopPara{
+        display: none; 
+    }
+    
+    .thirdTop:hover .firstTopPara{
+        display: none; 
+    }
+
     .rightStories {
         width: 58%;
     }
@@ -337,7 +415,7 @@
 
 @media screen and (max-width: 850px) {
 
-    .mainDiv>img,
+    .mainDiv>.firstTop,
     .leftImg {
         height: 400px;
     }
@@ -392,7 +470,7 @@
 
 @media screen and (max-width: 700px) {
 
-    .mainDiv>img,
+    .mainDiv>.firstTop,
     .leftImg {
         height: 360px;
     }
@@ -407,7 +485,7 @@
         margin-bottom: -180px;
     }
 
-    .mainDiv>img {
+    .mainDiv>.firstTop {
         width: 100%;
         height: 300px;
     }
@@ -417,7 +495,7 @@
         flex-direction: row;
     }
 
-    .leftImg>img {
+    .leftImg>div {
         width: 49%;
     }
     .rightSide {
@@ -443,7 +521,7 @@
         margin-bottom: -170px;
     }
 
-    .mainDiv>img {
+    .mainDiv>.firstTop {
         height: 250px;
     }
 
@@ -476,7 +554,7 @@
         margin-bottom: -150px;
     }
 
-    .mainDiv>img {
+    .mainDiv>.firstTop {
         height: 200px;
     }
 
@@ -488,7 +566,7 @@
         width: 95%;
     }
 
-    .leftImg>img {
+    .leftImg>div {
         height: 120px;
     }
     .leftDiv p {

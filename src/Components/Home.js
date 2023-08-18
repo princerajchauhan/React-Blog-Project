@@ -9,21 +9,24 @@ import Adv from '../Advertisement'
 
 
 const Home = () => {
-    window.scrollTo(0,0)
     useEffect(() => {
         document.title = `Blog Machine`
     })
     const context = useContext(Data)
     const advert = useContext(Adv)
 
-    const [topImage] = useState(context.sort(() => Math.random() - Math.random()).slice(0, 3))
-    // useEffect(()=>{
-    //     setTimeout(() => {
-    //         setTopImage(context.sort(() => Math.random() - Math.random()).slice(0,3))
-    //         console.log(topImage)
-    //         console.log(new Date().getSeconds())
-    //     }, 5000)
-    // },[topImage])
+    const [topImage, setTopImage] = useState(context.sort(() => Math.random() - Math.random()).slice(0, 3))
+    useEffect(() => {
+        const setId = setInterval(() => {
+            setTopImage(context.sort(() => Math.random() - Math.random()).slice(0, 3))
+            // console.log(topImage)
+            console.log(new Date().getSeconds())
+        }, 5000)
+        return (() => {
+            clearInterval(setId)
+            console.log('clear')
+        })
+    })
 
 
     const [newContext] = useState(context.sort(() => Math.random() - Math.random()).slice(0, 3))
@@ -31,11 +34,6 @@ const Home = () => {
     const [topContext] = useState(context.sort(() => Math.random() - Math.random()).slice(0, 10))
 
     const [letfTop] = useState(context.sort(() => Math.random() - Math.random()).slice(0, 5))
-    // useEffect(() =>{
-    //     setTimeout(() => {
-    //         setLeftTop(context.sort(() => Math.random() - Math.random()).slice(0, 5))
-    //     }, 5000);
-    // },[letfTop])
 
     return (
         <>
@@ -44,10 +42,28 @@ const Home = () => {
 
                 {/* ******************* Top 3 Images *************************** */}
                 <div className='mainDiv'>
-                    <img src={topImage[0].img_url} alt="" />
+                    <div className="firstTop">
+                        <img src={topImage[0].img_url} alt="" />
+                        <div className='firstTopPara'>
+                            <p className='topTitle'>{topImage[0].title.split(' ').slice(0, 8).join(' ')}</p>
+                            <p>{topImage[0].description.split(' ').slice(0, 30).join(' ')}...</p>
+                        </div>
+                    </div>
                     <div className="leftImg">
-                        <img src={topImage[1].img_url} alt="" />
-                        <img src={topImage[2].img_url} alt="" />
+                        <div className="secondTop">
+                            <img src={topImage[1].img_url} alt="" />
+                            <div className='firstTopPara'>
+                                <p className='topTitle'>{topImage[1].title.split(' ').slice(0, 3).join(' ')}</p>
+                                <p>{topImage[1].description.split(' ').slice(0, 10).join(' ')}...</p>
+                            </div>
+                        </div>
+                        <div className="thirdTop">
+                            <img src={topImage[2].img_url} alt="" />
+                            <div className='firstTopPara'>
+                                <p className='topTitle'>{topImage[2].title.split(' ').slice(0, 3).join(' ')}</p>
+                                <p>{topImage[2].description.split(' ').slice(0, 10).join(' ')}...</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -97,7 +113,7 @@ const Home = () => {
                                 {
                                     advert.sort(() => Math.random() - Math.random()).slice(0, 3).map((element, index) => {
                                         return (
-                                            <div className="adv"  key={index}>
+                                            <div className="adv" key={index}>
                                                 <img src={element.img_url} alt='Not found' />
                                             </div>
                                         )

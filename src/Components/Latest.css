@@ -68,6 +68,17 @@
 
 /* ************************ RESPONSIVE ************************* */
 
+
+@media screen and (max-width:1050px) {
+    .latestDiv{
+        width: 45%;
+    }
+    .linkClass > img{
+        height: 21vw;
+    }
+}
+
+
 @media screen and (max-width: 860px) {
     .latestDiv{
         width: 47%;
