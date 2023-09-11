@@ -214,7 +214,7 @@ const Data = createContext(
         {
             "id": 30,
             "title": "Suspended pushup",
-            "img_url": "https://evofitness.at/wp-content/uploads/2017/12/1560-X-816-Blog-Header-2.jpg",
+            "img_url": "https://www.inspireusafoundation.org/wp-content/uploads/2023/04/suspended-push-ups.gif",
             "description": "Trainers far and wide have touted the usefulness of suspension-training systems like the TRX for years, and the fitness population is starting to catch on. In a pushup, the instability of the handles leads to more muscle fiber activation, in turn leading to more strength and muscle development in less time than in other variations of the classic pushup, as well as long-term health for your shoulders.",
             "category": "Fitness"
         },
