@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+// import axios from 'axios '
 import './Home.css'
 import Latest from './Latest'
 import Data from '../Data'
@@ -20,11 +21,11 @@ const Home = () => {
         const setId = setInterval(() => {
             setTopImage(context.sort(() => Math.random() - Math.random()).slice(0, 3))
             // console.log(topImage)
-            console.log(new Date().getSeconds())
+            // console.log(new Date().getSeconds())
         }, 5000)
         return (() => {
             clearInterval(setId)
-            console.log('clear')
+            // console.log('clear')
         })
     })
 
