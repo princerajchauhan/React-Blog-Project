@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+// import axios from 'axios '
 import './Home.css'
 import Latest from './Latest'
 import Data from '../Data'

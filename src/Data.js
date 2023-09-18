@@ -1,5 +1,7 @@
-import { createContext } from "react"
+import axios from "axios"
+import { createContext, useEffect, useState } from "react"
 
+<<<<<<< HEAD
 const Data = createContext(
     [
         {
@@ -637,8 +639,30 @@ const Data = createContext(
             "img_url": "https://www.inspireusafoundation.org/wp-content/uploads/2022/10/seated-overhead-press.gif",
             "description": "Some would argue that the standing barbell overhead press is a better upper-body developer than the mighty bench press itself. One of the reasons why the argument can be made is the major involvement of the abs and all the different assistance muscles that get used to press the barbell overhead. Another big testosterone producer, this move leads to a set of shoulders that look like cannonballs and will develop the chest just as well as any other move.",
             "category": "Fitness"
+=======
+const Data = createContext()
+
+export const Context = (props) => {
+    const [api, setApi] = useState()
+
+    useEffect(() => {
+        async function fun() {
+            const data = await axios.get("https://prince-blog-project.onrender.com/api").then(res => res.data).catch(err => console.log(err))
+            setApi(data)
+>>>>>>> f8a4aabfcf6644fce44a4331f78b43ee25c75894
         }
-    ]
-)
+
+        fun()
+    }, [])
+
+    return (
+        <>
+            {api && <Data.Provider value={api}>
+                {props.children}
+            </Data.Provider>}
+        </>
+
+    )
+}
 
 export default Data
