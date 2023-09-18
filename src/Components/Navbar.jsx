@@ -13,7 +13,7 @@ const Navbar = () => {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('hamActive')
             navMenu.classList.toggle('hamActive')
-            console.log("Clicked", hamburger.classList)
+            // console.log("Clicked", hamburger.classList)
         })
         
         document.querySelectorAll('.nav-item').forEach(n => {

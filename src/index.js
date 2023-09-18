@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Spinner from './Spinner/Spinner'
+
+const LazyComp = lazy(() => import('./App'))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   // </React.StrictMode>
-    <App />
+  // <App />
+  <Suspense fallback={<Spinner />}>
+    <LazyComp />
+  </Suspense>
 );
 
 // If you want to start measuring performance in your app, pass a function

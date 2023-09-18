@@ -341,7 +341,7 @@ const Data = createContext(
         {
             "id": 47,
             "title": "Spectre",
-            "img_url": "https://i0.wp.com/elrincon.tv/wp-content/uploads/2016/08/80575fb22c58f2add8f44ea003c5b050-1024x640.jpg?ssl=1",
+            "img_url": "https://imageio.forbes.com/blogs-images/scottmendelson/files/2015/11/spectre-banner-3-1200x600.jpg?format=jpg&width=1200",
             "description": "n Mexico City, MI6 agent James Bond foils a bombing attempt during a Day of the Dead festival. Bond obtains a ring stylized with an octopus from the deceased[failed verification] attacker, Marco Sciarra, uncovering his connection to a secret organization.",
             "rating": "6.8/10",
             "category": "Hollywood"
@@ -640,6 +640,5 @@ const Data = createContext(
         }
     ]
 )
-
 
 export default Data
