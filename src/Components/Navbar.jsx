@@ -1,9 +1,11 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './Nav.css'
 import { NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
+
+    const [showham] = useState(false)
 
     useEffect(() => {
         const hamburger = document.querySelector('.hamburger')
@@ -13,7 +15,7 @@ const Navbar = () => {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('hamActive')
             navMenu.classList.toggle('hamActive')
-            // console.log("Clicked", hamburger.classList)
+            console.log("Clicked")
         })
         
         document.querySelectorAll('.nav-item').forEach(n => {
@@ -24,7 +26,7 @@ const Navbar = () => {
             })
         })
 
-    })
+    }, [showham])
 
     return (
         <div style={{ width: '85%', margin: 'auto' }}>
